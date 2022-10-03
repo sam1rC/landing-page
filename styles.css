@@ -7,11 +7,12 @@ html,body{
 
 body{
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     font-family: 'Roboto', sans-serif;
     width: 100%;
 }
 
+/*HEADER*/
 .header{
     color: white;
     background-color: #1F2937;
@@ -19,7 +20,6 @@ body{
     flex-direction: column;
     padding: 10px 250px 150px 250px;
     gap: 40px;
-    flex: 0 auto;
 }
 
 .top-header, .bottom-header, .header-links{
@@ -98,6 +98,13 @@ li{
     align-self: center;
 }
 
+@media (max-width: 900px) {
+    .top-header, .bottom-header{
+        flex-direction: column;
+    }
+    
+}
+
 /*INFO CONTAINER*/
 .info-container{
     display:flex;
@@ -105,6 +112,7 @@ li{
     gap: 30px;
     padding: 50px;
 }
+
 .info-text{
     display: flex;
     font-size: 36px;
@@ -113,11 +121,15 @@ li{
     justify-content: center;
 }
 
-.box-container{
+.box-container, .item{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+}
+
+.box-container{
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .info-box{
@@ -125,4 +137,14 @@ li{
     height: 150px;
     border: 3px solid #3882F6;
     border-radius: 8px;
+}
+
+.text{
+    max-width: 200px;
+    text-align: center;
+}
+
+.item{
+    flex-flow: column wrap;
+    gap: 10px;
 }
