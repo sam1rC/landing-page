@@ -12,9 +12,7 @@ body{
     background-color: #1F2937;
     display: flex;
     flex-direction: column;
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-bottom: 200px;
+    padding: 10px 250px 150px 250px;
     gap: 40px;
 }
 
@@ -56,8 +54,11 @@ li{
 
 /*BOTTOM HEADER*/
 .description-text{
-    width: 400px;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
     height: auto;
+    gap: 5px;
 }
 
 
@@ -75,9 +76,18 @@ li{
 
 .place-holder{
     display: flex;
-    width: 400px;
+    width: 600px;
     height: 200px;
     background-color: gray;
     justify-content: center;
     align-items: center;
+}
+
+.sign-btn{
+    background-color: #3882F6;
+    color: #E5E7EB;
+    font-weight: bold;
+    padding: 10px 30px 10px 30px;
+    border-radius: 8px;
+    align-self: center;
 }
