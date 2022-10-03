@@ -2,6 +2,9 @@ body{
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
 }
 
 .header{
@@ -9,28 +12,54 @@ body{
     background-color: #1F2937;
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 200px;
+    gap: 40px;
+}
+
+.top-header, .bottom-header, .header-links{
+    display: flex;
 }
 
 .top-header, .bottom-header{
-    display: flex;
-}
-
-.place-holder{
-    display: flex;
-    height: 200px;
-    width: auto;
-    background-color: gray;
-    justify-content: center;
     align-items: center;
-    padding: 20px;
 }
 
+.top-header{
+    justify-content: space-between;
+}
+
+.bottom-header{
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/*TOP HEADER*/
 .logo{
     font-size: 24px;
     color: #F9FAF8;
+    font-weight: bold;
 }
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.header-links{
+    gap: 20px;
+}
+
+/*BOTTOM HEADER*/
+.description-text{
+    width: 400px;
+    height: auto;
+}
+
 
 .main-text{
     font-size: 48px;
@@ -44,10 +73,11 @@ body{
     
 }
 
-a{
-    text-decoration: none;
-}
-
-li{
-    list-style: none;
+.place-holder{
+    display: flex;
+    width: 400px;
+    height: 200px;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
 }
