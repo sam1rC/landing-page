@@ -142,6 +142,7 @@ li{
 .text{
     max-width: 200px;
     text-align: center;
+    color: grey; 
 }
 
 .item{
