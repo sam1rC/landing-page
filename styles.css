@@ -149,3 +149,9 @@ li{
     flex-flow: column wrap;
     gap: 10px;
 }
+
+/*QUOTE*/
+.quote-container{
+    display: flex;
+    background-color: #E5E7EB;
+}
