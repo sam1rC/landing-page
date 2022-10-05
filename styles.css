@@ -105,12 +105,13 @@ li{
     
 }
 
+
 /*INFO CONTAINER*/
 .info-container{
     display:flex;
     flex-flow: column wrap;
     gap: 30px;
-    padding: 50px;
+    padding: 50px 150px 150px 150px;
 }
 
 .info-text{
@@ -154,4 +155,28 @@ li{
 .quote-container{
     display: flex;
     background-color: #E5E7EB;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 150px;
 }
+
+.quote{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.quote-text{
+    text-align: justify;
+    font-size: 30px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quote-reference{
+    text-align: end;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
