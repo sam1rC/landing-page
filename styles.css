@@ -219,3 +219,20 @@ li{
     border-radius: 8px;
     align-self: center;
 }
+
+
+/* FOOTER */
+
+.footer{
+    display: flex;
+    background-color:#1F2937;
+    padding: 30px 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text
+{
+    color: white;
+    font-weight: bold;
+}
